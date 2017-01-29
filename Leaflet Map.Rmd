@@ -1,0 +1,20 @@
+---
+title: "Leaflet Map"
+author: "Luis Felipe Choueiri"
+date: "January 28, 2017"
+output: html_document
+---
+
+
+```{r, echo = FALSE, warning=FALSE}
+library(leaflet)
+
+
+my_map <-  leaflet() %>% 
+  addTiles() %>%
+  addMarkers(lng = -43.1, lat= -22.4)
+
+my_map
+
+```
+
